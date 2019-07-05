@@ -1,6 +1,6 @@
 # js-e1
 
-> JavaScript is a great language for writing and testing quick apps with user interaction
+> JavaScript is a great language for writing and testing quick apps with user interaction, but watch out for users!
 
 ## Links
 
@@ -11,6 +11,7 @@
 
 - A browser (e.g., Firefox or Chrome)
 - A text editor (e.g., VS Code or Notepad++, or Chrome)
+- Ability to protect your site from malicious users
 
 ## Benefits
 
@@ -23,10 +24,10 @@
 ## Resources
 
 - [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-- [HTML Validator](https://validator.w3.org/)
 
 ## See Also
 
+- [js-colors](https://github.com/profcase/js-colors)
 - [js-console](https://github.com/profcase/js-console)
 - [js-e1](https://github.com/profcase/js-e1)
 - [js-gui](https://github.com/profcase/js-gui)

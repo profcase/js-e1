@@ -10,45 +10,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
 
-  <main class = "container mt-3">
-    <article class = "row ">
+  <main class="container mt-3">
+    <article class="row ">
 
-      <section class = "col-md-4">
+      <section class="col-md-4">
         <h1>Calculate Area of Rectangle</h1>
       </section>
 
-      <section class = "col-md-4">
-          <p class="highlight">Enter your name:
-          <input id="user" type="text" value="Lilly">
-        </p>
-        <p>Enter length of the rectange:
-          <input id="len" type="number" value="3">
-        </p>
-        <p>Enter width of the rectangle:
-          <input id="wid" type="number" value="4">
-        </p>
+      <section class="col-md-4">
+
+        <fieldset>
+          <label for="user">Enter your name (max 70):</label>
+          <input id="user" type="text" value="Lilly" maxlength="70">
+        </fieldset>
+
+        <fieldset>
+          <label for="len">Enter length (1-1000):</label>
+          <input id="len" type="number" value="3" min="1" max="1000">
+        </fieldset>
+
+        <fieldset>
+          <label for="wid">Enter width (1-1000):</label>
+          <input id="wid" type="number" value="4" min="1" max="1000">
+        </fieldset>
+
       </section>
 
-      <section class = "col-md-4">
-          <button id="btn" class="btn btn-primary mb-3">Click me!</button>
-        <p id="display-area"></p>
+      <section class="col-md-4">
+        <button id="good" class="btn btn-primary mb-3">Click me!</button>
+        <p id="display-area-good"></p>
+        <button id="bad" class="btn btn-danger mb-3">Click me!</button>
+        <p id="display-area-bad"></p>
       </section>
 
 
     </article>
   </main>
 
-
-
   <script src="main.js"></script>
-
 
 </body>
 
