@@ -3,7 +3,7 @@ const  calcArea = (length, width) => {
 }
 const orig = "https://upload.wikimedia.org/wikipedia/commons/2/26/You_Have_Been_Hacked%21.jpg"
 const short = "https://bit.ly/30SSCdO"
-const hacked = "<h1><a href="https://bit.ly/30SSCdO">Lilly</a></h1>"
+const hacked = "<h1><a href='https://bit.ly/30SSCdO'>Lilly</a></h1>"
 
 document.querySelector('#good').addEventListener('click',  () => {
   // Never trust the user. ALWAYS white list input text
