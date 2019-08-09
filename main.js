@@ -3,7 +3,7 @@ const  calcArea = (length, width) => {
 }
 const orig = "https://upload.wikimedia.org/wikipedia/commons/2/26/You_Have_Been_Hacked%21.jpg"
 const short = "https://bit.ly/30SSCdO"
-const hacked = "<h1><a href='https://bit.ly/30SSCdO'>Lilly</a></h1>"
+const hacked = "<a href='https://bit.ly/30SSCdO'>Click here to win! </a>"
 
 document.querySelector('#good').addEventListener('click',  () => {
   // Never trust the user. ALWAYS white list input text
@@ -22,7 +22,7 @@ document.querySelector('#bad').addEventListener('click',  () => {
   const s = document.querySelector('#user').value
   const i = parseInt(document.querySelector('#len').value)
   const j = parseInt(document.querySelector('#wid').value)
-  const ans = s + ', the area is ' + calcArea(i, j) + '. Next time, limit your inputs (and do not click injected links)!'
+  const ans = `${s} Don't trust users! Look at the name field. As a web developer, always limit your input length, strip out possible coding characters, and don't click injected links. :)`
   document.querySelector('#display-area-bad').innerHTML = ans
 })
 

@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
 
 </head>
 
@@ -24,29 +25,29 @@
         <h1>Calculate Area of Rectangle</h1>
       </section>
 
-      <section class="col-md-4">
+      <section class="col-md-4 mt-3">
 
         <fieldset>
           <label for="user">Enter your name (max 70):</label>
           <input id="user" type="text" value="Lilly" maxlength="70">
         </fieldset>
 
-        <fieldset>
+        <fieldset class="mt-3">
           <label for="len">Enter length (1-1000):</label>
           <input id="len" type="number" value="3" min="1" max="1000">
         </fieldset>
 
-        <fieldset>
+        <fieldset class="mt-3">
           <label for="wid">Enter width (1-1000):</label>
           <input id="wid" type="number" value="4" min="1" max="1000">
         </fieldset>
 
       </section>
 
-      <section class="col-md-4">
+      <section class="col-md-4 mt-3">
         <button id="good" class="btn btn-primary mb-3">Click me!</button>
         <p id="display-area-good"></p>
-        <button id="bad" class="btn btn-danger mb-3"  title="Danger!  This button illustrates malicious user input - don't click the 'Lilly' hyperlink!">Don't click me!</button>
+        <button id="bad" class="btn btn-danger mb-3"  title="Danger!  This button illustrates malicious user input - don't click the resulting hyperlink - or you will be hacked!">Don't click me!</button>
         <p id="display-area-bad"></p>
       </section>
 
